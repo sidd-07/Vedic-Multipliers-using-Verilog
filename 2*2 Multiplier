@@ -1,0 +1,20 @@
+// =====================
+// 2 × 2 Vedic Multiplier
+// =====================
+module vedic_2x2(
+    input  [1:0] a,
+    input  [1:0] b,
+    output [3:0] p
+);
+    wire c0;
+
+    assign p[0] = a[0] & b[0];
+
+    wire t0 = a[1] & b[0];
+    wire t1 = a[0] & b[1];
+    wire t2 = a[1] & b[1];
+
+    half_adder HA1(t0, t1, p[1], c0);
+    half_adder HA2(t2, c0, p[2], p[3]);
+
+endmodule
