@@ -22,7 +22,6 @@ These multipliers are recursively built and fully synthesizable for FPGA-based D
 - ✔ Ideal foundation for reconfigurable MAC architectures  
 
 ---
----
 
 ## 🧩 Vedic Multiplier Hierarchy
 
